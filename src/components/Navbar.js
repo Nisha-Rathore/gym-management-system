@@ -4,7 +4,7 @@ import logo from "../image/logo11.jpeg";
 const Navbar = () => {
   return (
     <>
-    <header className="shadow " style={{backgroundColor:"#211e38"}}>
+    <header className="shadow px-10 mx-10" style={{backgroundColor:"#211e38"}} >
   <div className="relative flex max-w-screen-2xl flex-col overflow-hidden px-4 py-1 md:mx-auto md:flex-row md:items-center ">
     <a href="#" className="flex items-center whitespace-nowrap ">
         <div classNameName='flex'>

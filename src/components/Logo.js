@@ -1,66 +1,52 @@
-import React from 'react'
+import React from 'react';
+import image from "../image/logini1.avif";
 
 const Logo = () => {
   return (
     <div>
-        <div className="flex min-h-screen w-screen w-full items-center justify-center text-gray-600 bg-gray-50">
-  <div className="relative">
-    
-<div className="hidden sm:block h-56 w-56 text-indigo-300 absolute a-z-10 -left-20 -top-20">
-   <svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(0.6) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='none'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5'  stroke-width='1' stroke='none' fill='currentColor'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(#a)'/></svg>
-  </div>
-<div className="hidden sm:block h-28 w-28 text-indigo-300 absolute a-z-10 -right-20 -bottom-20">
-   <svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='b' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(0.5) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='none'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5'  stroke-width='1' stroke='none' fill='currentColor'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(#b)'/></svg>
-  </div>
-   
-    <div className="relative flex flex-col sm:w-[30rem] rounded-lg border-gray-400 bg-white shadow-lg px-4">
-      <div className="flex-auto p-6">
-       
-        <div className="mb-10 flex flex-shrink-0 flex-grow-0 items-center justify-center overflow-hidden">
-          <a href="#" className="flex cursor-pointer items-center gap-2 text-indigo-500 no-underline hover:text-indigo-500">
-            <span className="flex-shrink-0 text-3xl font-black lowercase tracking-tight opacity-100">Futurism.</span>
-          </a>
+     <div className="flex flex-wrap bg-gray-100 p-10 mx-10">
+  <div className="flex w-full flex-col md:w-1/2">
+    <div className="flex justify-center pt-12 md:-mb-24 md:justify-start md:pl-12">
+      <a href="#" className="border-b-gray-700 border-b-4 pb-2 text-2xl font-bold text-gray-900"></a>
+    </div>
+    <div className="lg:w-[28rem] mx-auto my-auto flex flex-col justify-center pt-8 md:justify-start md:px-6 md:pt-0">
+      <p className="text-left text-3xl font-bold">Log In</p>
+      <p className="mt-2 text-left text-gray-500">Welcome, please enter your details.</p>
+      <button className="-2 mt-8 flex items-center justify-center rounded-md border px-4 py-1 outline-none ring-gray-400 ring-offset-2 transition focus:ring-2 hover:border-transparent hover:bg-black hover:text-white"><img className="mr-2 h-5" src="https://static.cdnlogo.com/logos/g/35/google-icon.svg" alt /> Log in with Google</button>
+      <div className="relative mt-8 flex h-px place-items-center bg-gray-200">
+        <div className="absolute left-1/2 h-6 w-14 -translate-x-1/2 bg-white text-center text-sm text-gray-500">or</div>
+      </div>
+      <form className="flex flex-col pt-3 md:pt-8">
+        <div className="flex flex-col pt-4">
+          <div className="focus-within:border-b-gray-500 relative flex overflow-hidden border-b-2 transition">
+            <input type="email" id="login-email" className="w-full flex-1 appearance-none border-gray-300 bg-white px-4 py-2 text-base text-gray-700 placeholder-gray-400 focus:outline-none" placeholder="Email" />
+          </div>
         </div>
-       
-        <h4 className="mb-2 font-medium text-gray-700 xl:text-xl">Welcome to futurism!</h4>
-        <p className="mb-6 text-gray-500">Please sign-in to access your account</p>
-
-        <form id="" className="mb-4" action="#" method="POST">
-          <div className="mb-4">
-            <label for="email" className="mb-2 inline-block text-xs font-medium uppercase text-gray-700">Email or Username</label>
-            <input type="text" className="block w-full cursor-text appearance-none rounded-md border border-gray-400 bg--100 py-2 px-3 text-sm outline-none focus:border-indigo-500 focus:bg-white focus:text-gray-600 focus:shadow" id="email" name="email-username" placeholder="Enter your email or username" autofocus="" />
+        <div className="mb-12 flex flex-col pt-4">
+          <div className="focus-within:border-b-gray-500 relative flex overflow-hidden border-b-2 transition">
+            <input type="password" id="login-password" className="w-full flex-1 appearance-none border-gray-300 bg-white px-4 py-2 text-base text-gray-700 placeholder-gray-400 focus:outline-none" placeholder="Password" />
           </div>
-          <div className="mb-4">
-            <div className="flex justify-between">
-              <label className="mb-2 inline-block text-xs font-medium uppercase text-gray-700" for="password">Password</label>
-              <a href="auth-forgot-password-basic.html" className="cursor-pointer text-indigo-500 no-underline hover:text-indigo-500">
-                <small className=" ">Forgot Password?</small>
-              </a>
-            </div>
-            <div className="relative flex w-full flex-wrap items-stretch">
-              <input type="password" id="password" className="relative block flex-auto cursor-text appearance-none rounded-md border border-gray-400 bg--100 py-2 px-3 text-sm outline-none focus:border-indigo-500 focus:bg-white focus:text-gray-600 focus:shadow" name="password" placeholder="············" />
-            </div>
-          </div>
-          <div className="mb-4">
-            <div className="block">
-              <input className="mt-1 mr-2 h-5 w-5 appearance-none rounded border border-gray-300 bg-contain bg-no-repeat align-top text-black shadow checked:bg-indigo-500 focus:border-indigo-500 focus:shadow" type="checkbox" id="remember-me" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 10l3 3l6-6'/%3e%3c/svg%3e&quot;)" checked />
-              <label className="inline-block" for="remember-me"> Remember Me </label>
-            </div>
-          </div>
-          <div className="mb-4">
-            <button className="grid w-full cursor-pointer select-none rounded-md border border-indigo-500 bg-indigo-500 py-2 px-5 text-center align-middle text-sm text-white shadow hover:border-indigo-600 hover:bg-indigo-600 hover:text-white focus:border-indigo-600 focus:bg-indigo-600 focus:text-white focus:shadow-none" type="submit">Sign in</button>
-          </div>
-        </form>
-
-        <p className="mb-4 text-center">
-          New on futurism?
-          <a href="#" className="cursor-pointer text-indigo-500 no-underline hover:text-indigo-500"> Create an account </a>
+        </div>
+        <button type="submit" style={{backgroundColor:"#2F1B44"}} className="w-full rounded-lg px-4 py-2 text-center text-base font-semibold text-white shadow-md ring-gray-500 ring-offset-2 transition focus:ring-2">Log in</button>
+      </form>
+      <div className="py-12 text-center">
+        <p className="whitespace-nowrap text-gray-600">
+          Don't have an account?
+          <a href="#" className="underline-offset-4 font-semibold text-gray-900 underline">Sign up.</a>
         </p>
       </div>
     </div>
-    
+  </div>
+  <div className="pointer-events-none relative hidden h-screen select-none bg-black md:block md:w-1/2">
+    <div className="absolute bottom-0 z-10 px-8 bg-purple-200 bg-opacity-50 ">
+      <p className="m-10 text-xl font-semibold leading-10 text-gray-800 opacity-100"><span className="text-3xl text-orange-400 text-opacity-100">“Manage Your Gym Smarter, Not Harder”,</span><br></br> All-in-one platform for memberships, payments, trainers, and fitness tracking.We believe fitness changes lives—and managing a fitness business shouldn’t be complicated.</p>
+      <p className="">Founder,</p>
+      <p className="mb-7 text-sm opacity-70">GYM MANAGEMENT SYSTEM</p>
+    </div>
+    <img className="-z-1 absolute top-0 h-full w-full object-cover opacity-90" src={image} />
   </div>
 </div>
+
 
     </div>
   )
