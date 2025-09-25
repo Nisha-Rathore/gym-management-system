@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
-import Logo from './components/Logo';
 import Features from './components/Features';
+import Logo from './components/Logo';
+import Navbar from './components/Navbar';
 import Login from './pages/Login';
 import Main from './pages/Main';
 
@@ -12,8 +11,8 @@ function App() {
     <>
       {/* <Navbar />
       <Logo />
-      <Features />
-      <Login /> */}
+      <Features /> */}
+      {/* <Login /> */}
       <Main />
 
     </>

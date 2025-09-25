@@ -1,0 +1,1 @@
+- [x] Edit src/pages/Main.js to add fill, stroke, stroke-width, className, and path to the Dashboard SVG.

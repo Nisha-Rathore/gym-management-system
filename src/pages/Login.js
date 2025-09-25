@@ -5,9 +5,10 @@ import Navbar from '../components/Navbar';
 const Login = () => {
   return (
     <>
+    <div className='mx-0 '>
     <Navbar />
-    <div className='mx-10 pt-10 w-full h-screen bg-gray-300 relative '>
-        <img src={image} alt="Background" className="absolute top-0 left-0 w-full h-full object-cover" />
+    <div className='w-full h-screen relative '>
+        <img src={image} alt="Background" className="absolute top-0 left-10 w-cover h-auto" />
         <div className='flex justify-center items-center h-full'>
             <form className='bg-black p-10 rounded-lg shadow-md w-full max-w-md relative z-10 opacity-60'>
                 <h2 className='text-2xl font-bold mb-6 text-center text-white opacity-100'>Login to GMS</h2>
@@ -30,12 +31,11 @@ const Login = () => {
 
                 <button className='w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-300' style={{backgroundColor:"#190630ff",opacity:'100%'}} type='submit'>Login</button>
             </form>
-        </div>
-
-        
+         </div>
+       </div>
     </div>
     </>
   )
 }
 
-export default Login
+export default Login;
