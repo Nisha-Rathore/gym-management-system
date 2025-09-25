@@ -6,15 +6,14 @@ const Main = () => {
     <div className=''>
         <Navbar />
         <div className="h-screen px-10">
-  <div className="flex h-5/6 w-80 flex-col  bg-purple-100">
+  <div className="flex h-9/6 w-80 flex-col  bg-gray-100">
     <ul className="flex flex-col">
       <li className="relative transition">
         <input className="peer hidden" type="checkbox" id="menu-1" checked />
-        <div className="relative m-2 flex items-center rounded-xl border-b-4 border-gray-300 bg-gray-200 py-3 pl-5 text-sm text-gray-500">
+        <div className="relative m-2 flex items-center rounded-xl hover:bg-white py-3 pl-5 text-sm text-gray-500">
           <span className="mr-5 flex w-5 text-gray-500">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
+    <svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
       width="1em"
       height="1em"
       className="h-6 w-6"
@@ -29,9 +28,6 @@ const Main = () => {
           Dashboard
           <label for="menu-1" className="absolute inset-0 h-full w-full cursor-pointer"></label>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" className="peer-checked:rotate-180 absolute right-0 top-6 mr-5 ml-auto h-4 text-gray-500 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
         <ul className="duration-400 peer-checked:max-h-96 m-2 flex max-h-0 flex-col overflow-hidden rounded-2xl bg-gray-100 transition-all duration-300">
           <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
             <span className="mr-5">
@@ -355,37 +351,19 @@ const Main = () => {
         </svg>
         <ul className="duration-400 peer-checked:max-h-96 m-2 flex max-h-0 flex-col overflow-hidden rounded-2xl bg-gray-100 transition-all duration-300">
           <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
-            <span className="mr-5"
-              >
+            <span className="mr-5">
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      width="1em"
-      height="1em"
-      className='h-5 w-5'
+      viewBox="0 0 48 48"
+      width="2em"
+      height="2em"
     >
       <path
         fill="currentColor"
-        d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+        fillRule="evenodd"
+        d="M6 6h31v5h-2V8H8v23h21.387v2H6zm30 13a3 3 0 1 0 0-6a3 3 0 0 0 0 6m2.031 2.01c1.299 0 2.327.584 3 1.486c.629.845.895 1.89.955 2.855a7.6 7.6 0 0 1-.397 2.92c-.3.87-.807 1.77-1.589 2.387V40.5a1.5 1.5 0 0 1-2.98.247L35.73 33h-.298l-1.458 7.776A1.5 1.5 0 0 1 31 40.5V26.233a63 63 0 0 0-.592.919l-.078.123l-.02.032l-.005.009a1.5 1.5 0 0 1-1.274.707h-5a1.5 1.5 0 1 1 0-3h4.177c.243-.376.563-.864.899-1.354c.35-.511.736-1.052 1.08-1.476c.167-.207.354-.423.542-.6c.092-.087.22-.2.376-.3a1.7 1.7 0 0 1 .926-.282z"
+        clipRule="evenodd"
       ></path>
-      <rect width="2" height="7" x="11" y="6" fill="currentColor" rx="1">
-        <animateTransform
-          attributeName="transform"
-          dur="9s"
-          repeatCount="indefinite"
-          type="rotate"
-          values="0 12 12;360 12 12"
-        ></animateTransform>
-      </rect>
-      <rect width="2" height="9" x="11" y="11" fill="currentColor" rx="1">
-        <animateTransform
-          attributeName="transform"
-          dur="0.75s"
-          repeatCount="indefinite"
-          type="rotate"
-          values="0 12 12;360 12 12"
-        ></animateTransform>
-      </rect>
     </svg>
 </span>
           classes & schedule
@@ -395,15 +373,21 @@ const Main = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      width="1em"
-      height="1em"
-      className='h-7 w-7'
+      width="2em"
+      height="2em"
     >
-      <path
-        fill="currentColor"
-        d="M12 3L4 9v12h16V9zm.5 9.5c0 .83-.67 1.5-1.5 1.5v4h-1v-4c-.83 0-1.5-.67-1.5-1.5v-3h1v3h.5v-3h1v3h.5v-3h1zM15 18h-1v-3.5h-1v-3c0-1.1.9-2 2-2z"
-      ></path>
+      <g
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+      >
+        <path d="M7.4 7H4.6a.6.6 0 0 0-.6.6v8.8a.6.6 0 0 0 .6.6h2.8a.6.6 0 0 0 .6-.6V7.6a.6.6 0 0 0-.6-.6m12 0h-2.8a.6.6 0 0 0-.6.6v8.8a.6.6 0 0 0 .6.6h2.8a.6.6 0 0 0 .6-.6V7.6a.6.6 0 0 0-.6-.6"></path>
+        <path d="M1 14.4V9.6a.6.6 0 0 1 .6-.6h1.8a.6.6 0 0 1 .6.6v4.8a.6.6 0 0 1-.6.6H1.6a.6.6 0 0 1-.6-.6m22 0V9.6a.6.6 0 0 0-.6-.6h-1.8a.6.6 0 0 0-.6.6v4.8a.6.6 0 0 0 .6.6h1.8a.6.6 0 0 0 .6-.6M8 12h8"></path>
+      </g>
     </svg>
+
 </span>
            Courses
            </li>
@@ -412,19 +396,13 @@ const Main = () => {
               >
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 64 64"
+      viewBox="0 0 512 512"
       width="2em"
       height="2em"
-
     >
-      <path fill="#fff" d="M0 0h64v64H0z"></path>
       <path
-        fill="#52c18e"
-        d="M58.7 5.3h-5.6L37.3 25.5l-9.6-11.2L0 54.5V64h6.4l22.2-32.3l9.2 10.6l20.9-26.8z"
-      ></path>
-      <path
-        fill="#d0d5d8"
-        d="M64 0H0v50.7l3-4.3h-.9V33.1h10l1.5-2.1H2.1V17.6h13.3v10.7l2.1-3.1v-7.6h5.2l1.5-2.1h-6.7V2.1h13.3v12.7l2.4 2.8h7.5l1.7-2.1H33V2.1h13.3v8.3l2.1-2.7V2.1h13.3v13.3h-1.1v.8l-1 1.3h2.1v13.3H49.3l-2.9 3.8v11.7H33.1V40L31 37.5v8.7h-9.8l-1.5 2.1H31v13.3H17.6V51.5l-2.1 3.1v7.3h-5L9 64h55zM15.5 15.5H2.1V2.1h13.3c.1 0 .1 13.4.1 13.4m30.9 46.4H33.1V48.5h13.3zm15.5 0H48.5V48.5h13.3v13.4zm0-15.5H48.5V33.1h13.3v13.3z"
+        fill="currentColor"
+        d="M260.7 29.45c-25.7.1-51.1 2.14-73.1 5.22l10.2 37.24c41.9-8.58 85.7-5.82 129.7.1l7.8-35.94c-23-4.82-48.9-6.71-74.6-6.62m-88.4 16.28c-10.3 2.62-20.4 5.73-30 9.31c-8.2 3.05-13.3 9.6-19.1 18.13c-5.8 8.52-11.8 19.42-17.9 32.03c-12.3 25.2-25.13 57.1-36.88 88.6c-11.33 30.4-21.58 60.2-29.21 83c6.07-4.8 13.57-7.9 21.58-7.7c6.93-20.4 15.35-44.5 24.5-69c11.63-31.2 24.41-62.8 36.21-87c5.9-12.2 11.6-22.51 16.6-29.78c5-7.31 9.9-11.22 10.4-11.42c9.1-3.37 18.6-6.27 28.4-8.72zm178.2 5.23l-3.9 17.83c11.3 3.98 22 8.81 32 14.49c2.9 1.62 8.5 7.61 14.2 17.02c5.6 9.4 11.7 21.9 17.7 36.4c12.2 28.9 24.4 65.6 35.3 101.5c3.1 10.4 6.2 20.7 9.1 30.7c7.3 1 14.1 4.5 19.5 9.5c.9.8 1.7 1.6 2.5 2.5c-4.3-15.3-8.9-31.5-13.9-47.9c-10.9-36.3-23.3-73.4-35.9-103.3c-6.2-15-12.6-28.1-18.9-38.71c-6.4-10.56-12.5-18.67-20.6-23.33c-11.7-6.64-24.1-12.18-37.1-16.7M318.3 206.6L192 207.7l-.5.1c-30.3 3.2-53.4 30.5-57.7 66c6.1.3 12.1.6 18 .8c3.8-27.8 21.4-46.7 41.5-48.9l123.3-1.1c15.6 2.6 32.3 18.6 36.6 48.9c5.9-.3 11.9-.5 18-.8c-4.9-37.5-26.5-62-52.2-66zm131.9 80.1c-26.5 1.4-51.7 2.8-76 3.9c15.8 61 15.1 122.6 15 183.2c29.1-2.8 59-6.1 90-9.8c.6-.1 2.2-.7 4.5-5.1c2.3-4.3 4.5-11.4 5.9-20.2c2.9-17.6 3.2-41.5.7-65.2c-2.6-23.6-8.1-47-15.7-63.4c-3.8-8.2-8.1-14.6-12.3-18.4c-4.3-3.8-7.9-5.2-12.1-5m-390.9.4c-3.41.1-6.38 1.5-9.92 4.8c-4.05 3.7-8.29 10.1-11.99 18.3c-7.39 16.5-12.67 40.2-15.3 64.2s-2.67 48.4-.36 66.5c1.15 9 2.95 16.5 4.88 21c1.94 4.6 3.57 4.9 2.41 4.7c30.37 5.1 59.95 8.8 89.18 11.4c-5.6-58.2-3.5-119.8 11.9-186.4c-22.1-1-45.11-2.5-69.3-4.4c-.51 0-1.01-.1-1.5-.1m296.5 4.3c-70.4 3-134.8 4.1-207.5 1.1c-15.9 67-17.9 128.3-11.9 187c77.8 5.6 153.6 3.1 234.8-4.1c.1-62.6.8-124.4-15.4-184"
       ></path>
     </svg>
               </span>
@@ -452,7 +430,292 @@ const Main = () => {
 
         </ul>
       </li>
+
+
+
+       <li className="relative transition">
+        <input className="peer hidden" type="checkbox" id="menu-4" />
+        <div className="relative m-2 flex items-center rounded-xl border-b-4 border-gray-300 bg-gray-50 py-3 pl-5 text-sm text-gray-500">
+          <span className="mr-5 flex w-5 text-gray-500"
+            >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 32"
+      width="2em"
+      height="2em"
+    >
+      <path
+        fill="currentColor"
+        d="m25 14l-2.1-1c-1.7-.8-2.9-2.6-2.9-4.5V2h10v6.5c0 1.9-1.1 3.7-2.9 4.5zM22 4v4.5c0 1.2.7 2.2 1.7 2.7l1.3.6l1.3-.6c1-.5 1.7-1.6 1.7-2.7V4z"
+      ></path>
+      <path
+        fill="currentColor"
+        d="M28 16v6H4V6h12V4H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h8v4H8v2h16v-2h-4v-4h8c1.1 0 2-.9 2-2v-6zM18 28h-4v-4h4z"
+      ></path>
+    </svg>
+</span>
+       Authentication
+          <label for="menu-4" className="absolute inset-0 h-full w-full cursor-pointer"></label>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" className="peer-checked:rotate-180 absolute right-0 top-6 mr-5 ml-auto h-4 text-gray-500 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+        <ul className="duration-400 peer-checked:max-h-96 m-2 flex max-h-0 flex-col overflow-hidden rounded-2xl bg-gray-100 transition-all duration-300">
+          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+            <span className="mr-5">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="2em"
+      height="2em"
+    >
+      <g
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+      >
+        <path d="M14 12h.4a.6.6 0 0 1 .6.6v2.8a.6.6 0 0 1-.6.6H9.6a.6.6 0 0 1-.6-.6v-2.8a.6.6 0 0 1 .6-.6h.4m4 0v-2c0-.667-.4-2-2-2s-2 1.333-2 2v2m4 0h-4"></path>
+        <path d="m2 8l9.732-4.866a.6.6 0 0 1 .536 0L22 8m-2 3v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"></path>
+      </g>
+    </svg>
+</span>
+         Sign In
+          </li>
+          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+            <span className="mr-5">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 48 48"
+      width="2em"
+      height="2em"
+    >
+      <path
+        fill="currentColor"
+        fillRule="evenodd"
+        d="M4 20.5C4 12.492 10.492 6 18.5 6h11C37.508 6 44 12.492 44 20.5S37.508 35 29.5 35H28v7l-2.5-.5C9 37.5 4 28.508 4 20.5M27.333 18H29v9H19v-9h1.667v-2.77c0-1.554 1.492-2.813 3.333-2.813s3.333 1.259 3.333 2.812zM24 14.417c.47 0 .841.161 1.067.352c.222.187.266.357.266.46v2.688h-2.666v-2.688c0-.103.044-.273.266-.46c.226-.19.597-.352 1.067-.352"
+        clipRule="evenodd"
+      ></path>
+    </svg>
+
+</span>
+          Sign Up
+           </li>
+          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+            <span className="mr-5"
+              >
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="2em"
+      height="2em"
+    >
+      <g
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+        color="currentColor"
+      >
+        <path d="M15.395 21.9a94 94 0 0 1-4.424.1a95 95 0 0 1-4.424-.1c-1.678-.076-3.056-1.385-3.28-3.055C3.12 17.755 3 16.638 3 15.5s.12-2.255.267-3.345c.224-1.67 1.602-2.979 3.28-3.056C7.958 9.034 9.392 9 10.97 9s3.013.034 4.424.1c1.06.048 2 .588 2.605 1.4"></path>
+        <path d="M17 14.978A1.99 1.99 0 0 1 19 13c1.105 0 2 .886 2 1.978c0 .394-.116.76-.317 1.069c-.598.919-1.683 1.795-1.683 2.887v.495M19 22h.012M6.5 9V6.5a4.5 4.5 0 0 1 9 0V9M12 15.49v.01m-4-.01v.01"></path>
+      </g>
+    </svg></span>
+            Forgot & Reset Password
+          </li>
+         
+          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+            <span className="mr-5">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="2em"
+      height="2em"
+    
+    >
+      <path
+        fill="currentColor"
+        d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12c5.16-1.26 9-6.45 9-12V5zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11z"
+      ></path>
+    </svg>
+
+</span>
+         Security
+           </li>
+
+        </ul>
+      </li>
+
+
+
+       <li className="relative transition">
+        <input className="peer hidden" type="checkbox" id="menu-5" />
+        <div className="relative m-2 flex items-center rounded-xl border-b-4 border-gray-300 bg-gray-50 py-3 pl-5 text-sm text-gray-500">
+          <span className="mr-5 flex w-5 text-gray-500"
+            ><svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 48 48"
+      width="2em"
+      height="2em"
+    >
+      <defs>
+        <mask id="ipSShoppingCart0">
+          <g fill="none">
+            <path fill="#fff" d="M39 32H13L8 12h36z"></path>
+            <path stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" d="M3 6h3.5L8 12m0 0l5 20h26l5-20z" ></path>
+            <circle cx="13" cy="39" r="3" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" ></circle>
+    <circle cx="39" cy="39" r="3" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"></circle>
+            <path stroke="#" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" d="M22 22h8m-4 4v-8"></path> </g> </mask> </defs> <path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSShoppingCart0)"></path></svg>
+</span>
+       Products
+          <label for="menu-5" className="absolute inset-0 h-full w-full cursor-pointer"></label>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" className="peer-checked:rotate-180 absolute right-0 top-6 mr-5 ml-auto h-4 text-gray-500 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+        <ul className="duration-400 peer-checked:max-h-96 m-2 flex max-h-0 flex-col overflow-hidden rounded-2xl bg-gray-100 transition-all duration-300">
+          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+            <span className="mr-5">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="2em"
+      height="2em"
+    >
+      <path
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+        d="M17 13.23s-.91-.46-1.818-.46c-1.364 0-3.182 1.845-3.182 4.615C12 20.154 14.49 22 17 22s5-1.846 5-4.615s-1.818-4.616-3.182-4.616c-.909 0-1.818.462-1.818.462m0 0c0-1.384.91-3.23 2.727-3.23M10.655 5c.896 0 1.623-.672 1.623-1.5S11.55 2 10.655 2h-5.41c-.896 0-1.622.672-1.622 1.5S4.349 5 5.246 5m5.923-.077c.956 1.766 1.74 3.36 2.22 5.077q.059.21.111.423M10.428 22h-4.1C2.747 22 2 21.31 2 18v-4.223c0-3.4 1.098-5.891 2.705-8.862"
+        color="currentColor"
+      ></path>
+    </svg>
+</span>
+          Protein
+          </li>
+          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+            <span className="mr-5">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="2em"
+      height="2em"
+    >
+      <g
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+      >
+        <path d="M7.4 7H4.6a.6.6 0 0 0-.6.6v8.8a.6.6 0 0 0 .6.6h2.8a.6.6 0 0 0 .6-.6V7.6a.6.6 0 0 0-.6-.6m12 0h-2.8a.6.6 0 0 0-.6.6v8.8a.6.6 0 0 0 .6.6h2.8a.6.6 0 0 0 .6-.6V7.6a.6.6 0 0 0-.6-.6"></path>
+        <path d="M1 14.4V9.6a.6.6 0 0 1 .6-.6h1.8a.6.6 0 0 1 .6.6v4.8a.6.6 0 0 1-.6.6H1.6a.6.6 0 0 1-.6-.6m22 0V9.6a.6.6 0 0 0-.6-.6h-1.8a.6.6 0 0 0-.6.6v4.8a.6.6 0 0 0 .6.6h1.8a.6.6 0 0 0 .6-.6M8 12h8"></path>
+      </g>
+    </svg>
+
+</span>
+           Pre, Intra & Post-Workout Suppliments
+           </li>
+          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+            <span className="mr-5"
+              >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 32"
+      width="2em"
+      height="2em"
+    >
+      <g fill="none">
+        <g
+          fill="currentColor"
+          clipPath="url(#fluentEmojiHighContrastCannedFood0)"
+        >
+          <path d="M8 5.04h16v5.03h-2.239a7.98 7.98 0 0 0-5.771-2.46a7.98 7.98 0 0 0-5.771 2.46H8zm13.846 16.02H24v5.98H8v-5.98h2.134a7.98 7.98 0 0 0 5.856 2.55a7.98 7.98 0 0 0 5.856-2.55m-8.196-8.265a2.23 2.23 0 0 1-1.7-2.165h2.29c.71 0 1.344.333 1.752.852a2.23 2.23 0 0 1 1.768-.862h2.28a2.23 2.23 0 0 1-1.723 2.172a3.952 3.952 0 0 1-.757 7.828h-3.14c-2.18 0-3.95-1.77-3.95-3.95a3.954 3.954 0 0 1 3.18-3.875"></path>
+          <path d="M3 3.52A3.52 3.52 0 0 1 6.52 0h18.3a3.52 3.52 0 0 1 2.17 6.292v19.5a3.53 3.53 0 0 1 1.35 2.778a3.52 3.52 0 0 1-3.52 3.52H6.52A3.52 3.52 0 0 1 3 28.57a3.54 3.54 0 0 1 2-3.185V6.696A3.52 3.52 0 0 1 3 3.52M24.82 2H6.52a1.52 1.52 0 1 0 0 3.04H7v22h-.48c-.84 0-1.52.69-1.52 1.53s.68 1.52 1.52 1.52h18.3c.84 0 1.52-.68 1.52-1.52c0-.78-.585-1.43-1.34-1.52V5.03A1.52 1.52 0 0 0 24.82 2"></path>
+        </g>
+        <defs>
+          <clipPath id="fluentEmojiHighContrastCannedFood0">
+            <path fill="#fff" d="M0 0h32v32H0z"></path>
+          </clipPath>
+        </defs>
+      </g>
+    </svg>
+              </span>
+          Amino Acids Suppliments
+          </li>
+         
+          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+            <span className="mr-5">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="2em"
+      height="2em"
+    >
+      <g
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+      >
+        <path d="M8.6 16.4a4.6 4.6 0 0 1-6.5-6.5l7.8-7.8a4.6 4.6 0 0 1 6.5 6.5M5.999 5.999l4.25 4.25"></path>
+        <path d="M23.25 15.75a7.67 7.67 0 0 1-6 7.5a7.67 7.67 0 0 1-6-7.5V13.5a1.5 1.5 0 0 1 1.5-1.5h9a1.5 1.5 0 0 1 1.5 1.5zm-6-.75v4.5M15 17.25h4.5"></path>
+      </g>
+    </svg></span>
+        Multivitamins & Minerals
+           </li>
+
+        </ul>
+      </li>
+
+
+
+
+
       <li className="relative transition">
+        <div className="relative m-2 flex cursor-pointer items-center rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
+          <span className="mr-5 flex w-5 text-gray-500">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="2em"
+      height="2em"
+    >
+      <path
+        fill="currentColor"
+        d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2m4-11c0 2.61 1.67 4.83 4 5.66V17h2v2H4v-2h2v-7c0-2.79 1.91-5.14 4.5-5.8v-.7c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v.7c.71.18 1.36.49 1.95.9A5.9 5.9 0 0 0 14 9m10-1h-3V5h-2v3h-3v2h3v3h2v-3h3z"
+      ></path>
+    </svg>
+</span>
+         Notification & Communication
+        </div>
+      </li>
+      <li className="relative transition">
+        <div className="relative m-2 flex cursor-pointer items-center rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
+          <span className="mr-5 flex w-5 text-gray-500"
+            >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 512 512"
+      width="2em"
+      height="2em"
+    >
+      <path
+        fill="currentColor"
+        d="M192 32c0 17.7 14.3 32 32 32c123.7 0 224 100.3 224 224c0 17.7 14.3 32 32 32s32-14.3 32-32C512 128.9 383.1 0 224 0c-17.7 0-32 14.3-32 32m0 96c0 17.7 14.3 32 32 32c70.7 0 128 57.3 128 128c0 17.7 14.3 32 32 32s32-14.3 32-32c0-106-86-192-192-192c-17.7 0-32 14.3-32 32m-96 16c0-26.5-21.5-48-48-48S0 117.5 0 144v224c0 79.5 64.5 144 144 144s144-64.5 144-144s-64.5-144-144-144h-16v96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48s-48-21.5-48-48z"
+      ></path>
+    </svg>
+</span>
+         GYM Blog
+        </div>
+      </li>
+       <li className="relative transition">
         <div className="relative m-2 flex cursor-pointer items-center rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
           <span className="mr-5 flex w-5 text-gray-500"
             ><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
