@@ -9,9 +9,9 @@ import Main from './pages/Main';
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
-      {/* <Logo /> */}
-      {/* <Features /> 
+      {/* <Navbar />
+      <Logo />
+      <Features /> 
        <Login /> */}
       <Main />
 

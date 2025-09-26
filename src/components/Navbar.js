@@ -4,8 +4,8 @@ import logo from "../image/lgo1.png";
 const Navbar = () => {
   return (
     <>
-    <header className="shadow px-10 mx-10" style={{backgroundColor:"#5c7172ff"}} >
-  <div className="relative flex max-w-screen-2xl flex-col overflow-hidden px-4 py-1 md:mx-auto md:flex-row md:items-center ">
+    <header className="shadow" style={{backgroundColor:"#5c7172ff"}} >
+  <div className="relative flex max-w-screen-2xl flex-col overflow-hidden md:mx-auto md:flex-row md:items-center px-10 py-2">
     <a href="#" className="flex items-center whitespace-nowrap ">
         <div classNameName='flex'>
       <img src={logo} alt='logo' width={"50px"}/>

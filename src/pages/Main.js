@@ -3,14 +3,14 @@ import Navbar from '../components/Navbar'
 
 const Main = () => {
   return (
-    <div className=''>
+    <div>
         <Navbar />
-        <div className="h-screen px-10">
+        <div className="h-screen ">
   <div className="flex h-9/6 w-80 flex-col  bg-gray-100">
     <ul className="flex flex-col">
       <li className="relative transition">
-        <input className="peer hidden" type="checkbox" id="menu-1" checked />
-        <div className="relative m-2 flex items-center rounded-xl hover:bg-white py-3 pl-5 text-sm text-gray-500">
+        <input className="peer hidden" type="checkbox" id="menu-1" defaultChecked />
+        <div className="relative m-2 flex items-center hover:bg-gray-50 py-3 pl-5 text-sm text-gray-500">
           <span className="mr-5 flex w-5 text-gray-500">
     <svg xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
@@ -19,18 +19,18 @@ const Main = () => {
       className="h-6 w-6"
       
     >
-      <path
-        fill="currentColor"
-        d="M19 5v2h-4V5zM9 5v6H5V5zm10 8v6h-4v-6zM9 17v2H5v-2zM21 3h-8v6h8zM11 3H3v10h8zm10 8h-8v10h8zm-10 4H3v6h8z"
-      ></path>
-    </svg>
+      <path fill="currentColor" d="M19 5v2h-4V5zM9 5v6H5V5zm10 8v6h-4v-6zM9 17v2H5v-2zM21 3h-8v6h8zM11 3H3v10h8zm10 8h-8v10h8zm-10 4H3v6h8z"></path></svg>
 </span>
           Dashboard
-          <label for="menu-1" className="absolute inset-0 h-full w-full cursor-pointer"></label>
+          <label htmlFor="menu-1" className="absolute inset-0 h-full w-full cursor-pointer"></label>
         </div>
-        <ul className="duration-400 peer-checked:max-h-96 m-2 flex max-h-0 flex-col overflow-hidden rounded-2xl bg-gray-100 transition-all duration-300">
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
-            <span className="mr-5">
+
+      </li>
+
+      <li className="relative transition">
+        <input className="peer hidden" type="checkbox" id="menu-management" />
+        <div className="relative m-2 flex items-center hover:bg-gray-50 py-3 pl-5 text-sm text-gray-500">
+          <span className="mr-5">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 2048 2048"
@@ -44,9 +44,14 @@ const Main = () => {
       ></path>
     </svg>
   </span>
-           Management
-          </li>
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          Management
+          <label htmlFor="menu-management" className="absolute inset-0 h-full w-full cursor-pointer"></label>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" className="peer-checked:rotate-180 absolute right-0 top-6 mr-5 ml-auto h-4 text-gray-500 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+        <ul className="duration-400 peer-checked:max-h-96 m-2 flex max-h-0 flex-col overflow-hidden rounded-2xl bg-gray-100 transition-all duration-300">
+          <li className="m-2 flex cursor-pointer py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -57,14 +62,13 @@ const Main = () => {
     >
       <path
         fill="currentColor"
-        d="M3.5 7a5 5 0 1 1 10 0a5 5 0 0 1-10 0M5 14a5 5 0 0 0-5 5v2h17v-2a5 5 0 0 0-5-5zm19 7h-5v-2c0-1.959-.804-3.73-2.1-5H19a5 5 0 0 1 5 5zm-8.5-9a5 5 0 0 1-1.786-.329A6.97 6.97 0 0 0 15.5 7a6.97 6.97 0 0 0-1.787-4.671A5 5 0 1 1 15.5 12"
+        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4s-4 1.79-4 4s1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
       ></path>
     </svg>
-  
 </span>
             Members
           </li>
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          <li className="m-2 flex cursor-pointer py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5"
               >
  
@@ -87,7 +91,7 @@ const Main = () => {
   </span>
             Trainers
           </li>
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          <li className="m-2 flex cursor-pointer py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +113,7 @@ const Main = () => {
   </span>
            Finance
           </li>
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          <li className="m-2 flex cursor-pointer py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5"
               >
     <svg
@@ -132,7 +136,7 @@ const Main = () => {
 
       <li className="relative transition">
         <input className="peer hidden" type="checkbox" id="menu-2" />
-        <div className="relative m-2 flex items-center rounded-xl border-b-4 border-gray-300 bg-gray-50 py-3 pl-5 text-sm text-gray-500">
+        <div className="relative m-2 flex items-center py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
           <span className="mr-5 flex w-5 text-gray-500"
             >
     <svg
@@ -152,13 +156,13 @@ const Main = () => {
     </svg>
 </span>
          Workout & Diet Plans
-          <label for="menu-2" className="absolute inset-0 h-full w-full cursor-pointer"></label>
+          <label htmlFor="menu-2" className="absolute inset-0 h-full w-full cursor-pointer"></label>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" className="peer-checked:rotate-180 absolute right-0 top-6 mr-5 ml-auto h-4 text-gray-500 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" className="peer-checked:rotate-180 absolute right-0 top-6 mr-5 ml-auto h-4 text-gray-500 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
         <ul className="duration-400 peer-checked:max-h-96 m-2 flex max-h-0 flex-col overflow-hidden rounded-2xl bg-gray-100 transition-all duration-300">
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          <li className="m-2 flex cursor-pointer  py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5"
               >
     <svg
@@ -194,7 +198,7 @@ const Main = () => {
 </span>
            Workout Routines
           </li>
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          <li className="m-2 flex cursor-pointer py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -211,7 +215,7 @@ const Main = () => {
 </span>
            Custom Diet Plans
            </li>
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          <li className="m-2 flex cursor-pointer py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5"
               >
     <svg
@@ -235,25 +239,16 @@ const Main = () => {
             Progress tracking
           </li>
          
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          <li className="m-2 flex cursor-pointer py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      width="2em"
-      height="2em"
-     
+      width="1em"
+      height="1em"
+      className='h-5 w-5'
     >
-      <g
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-      >
-        <path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5.697M18 12V7a2 2 0 0 0-2-2h-2"></path>
-        <path d="M8 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2m0 6h4m-4 4h3m3 2.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0-5 0m4.5 2L21 22"></path>
-      </g>
+      <path fill="currentColor" d="M3 3v18h18V3H3zm16 16H5V5h14v14zM7 7h2v10H7V7zm4 0h2v10h-2V7zm4 0h2v10h-2V7z"></path>
     </svg>
 </span>
           Reports/Analytics
@@ -265,7 +260,7 @@ const Main = () => {
     {/* Other Sections */}
       <li className="relative transition">
         <input className="peer hidden" type="checkbox" id="menu-3" />
-        <div className="relative m-2 flex items-center rounded-xl border-b-4 border-gray-300 bg-gray-50 py-3 pl-5 text-sm text-gray-500">
+        <div className="relative m-2 flex items-center hover:bg-gray-50 py-3 pl-5 text-sm text-gray-500">
           <span className="mr-5 flex w-5 text-gray-500"
             >
     <svg
@@ -344,13 +339,13 @@ const Main = () => {
     </svg>
 </span>
         Our Services
-          <label for="menu-3" className="absolute inset-0 h-full w-full cursor-pointer"></label>
+          <label htmlFor="menu-3" className="absolute inset-0 h-full w-full cursor-pointer"></label>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" className="peer-checked:rotate-180 absolute right-0 top-6 mr-5 ml-auto h-4 text-gray-500 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        <svg xmlns="http://www.w3.org/2000/svg" className="peer-checked:rotate-180 absolute right-0 top-6 mr-5 ml-auto h-4 text-gray-500 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
         <ul className="duration-400 peer-checked:max-h-96 m-2 flex max-h-0 flex-col overflow-hidden rounded-2xl bg-gray-100 transition-all duration-300">
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          <li className="m-2 flex cursor-pointer py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -368,7 +363,7 @@ const Main = () => {
 </span>
           classes & schedule
           </li>
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          <li className="m-2 flex cursor-pointer py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -391,7 +386,7 @@ const Main = () => {
 </span>
            Courses
            </li>
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          <li className="m-2 flex cursor-pointer py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5"
               >
     <svg
@@ -409,7 +404,7 @@ const Main = () => {
             Franchise & memberships
           </li>
          
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          <li className="m-2 flex cursor-pointer py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -435,7 +430,7 @@ const Main = () => {
 
        <li className="relative transition">
         <input className="peer hidden" type="checkbox" id="menu-4" />
-        <div className="relative m-2 flex items-center rounded-xl border-b-4 border-gray-300 bg-gray-50 py-3 pl-5 text-sm text-gray-500">
+        <div className="relative m-2 flex items-center hover:bg-gray-50 py-3 pl-5 text-sm text-gray-500">
           <span className="mr-5 flex w-5 text-gray-500"
             >
     <svg
@@ -455,13 +450,13 @@ const Main = () => {
     </svg>
 </span>
        Authentication
-          <label for="menu-4" className="absolute inset-0 h-full w-full cursor-pointer"></label>
+          <label htmlFor="menu-4" className="absolute inset-0 h-full w-full cursor-pointer"></label>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" className="peer-checked:rotate-180 absolute right-0 top-6 mr-5 ml-auto h-4 text-gray-500 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
         <ul className="duration-400 peer-checked:max-h-96 m-2 flex max-h-0 flex-col overflow-hidden rounded-2xl bg-gray-100 transition-all duration-300">
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          <li className="m-2 flex cursor-pointer py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -483,7 +478,7 @@ const Main = () => {
 </span>
          Sign In
           </li>
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          <li className="m-2 flex cursor-pointer py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -502,7 +497,7 @@ const Main = () => {
 </span>
           Sign Up
            </li>
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          <li className="m-2 flex cursor-pointer py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5"
               >
 
@@ -527,7 +522,7 @@ const Main = () => {
             Forgot & Reset Password
           </li>
          
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          <li className="m-2 flex cursor-pointer py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -553,7 +548,7 @@ const Main = () => {
 
        <li className="relative transition">
         <input className="peer hidden" type="checkbox" id="menu-5" />
-        <div className="relative m-2 flex items-center rounded-xl border-b-4 border-gray-300 bg-gray-50 py-3 pl-5 text-sm text-gray-500">
+        <div className="relative m-2 flex items-center hover:bg-gray-50 py-3 pl-5 text-sm text-gray-500">
           <span className="mr-5 flex w-5 text-gray-500"
             ><svg
       xmlns="http://www.w3.org/2000/svg"
@@ -571,13 +566,13 @@ const Main = () => {
             <path stroke="#" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" d="M22 22h8m-4 4v-8"></path> </g> </mask> </defs> <path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSShoppingCart0)"></path></svg>
 </span>
        Products
-          <label for="menu-5" className="absolute inset-0 h-full w-full cursor-pointer"></label>
+          <label htmlFor="menu-5" className="absolute inset-0 h-full w-full cursor-pointer"></label>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" className="peer-checked:rotate-180 absolute right-0 top-6 mr-5 ml-auto h-4 text-gray-500 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
         <ul className="duration-400 peer-checked:max-h-96 m-2 flex max-h-0 flex-col overflow-hidden rounded-2xl bg-gray-100 transition-all duration-300">
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          <li className="m-2 flex cursor-pointer py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -598,7 +593,7 @@ const Main = () => {
 </span>
           Protein
           </li>
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          <li className="m-2 flex cursor-pointer py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -621,7 +616,7 @@ const Main = () => {
 </span>
            Pre, Intra & Post-Workout Suppliments
            </li>
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          <li className="m-2 flex cursor-pointer py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5"
               >
     <svg
@@ -649,7 +644,7 @@ const Main = () => {
           Amino Acids Suppliments
           </li>
          
-          <li className="m-2 flex cursor-pointer rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-white">
+          <li className="m-2 flex cursor-pointer py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
             <span className="mr-5">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -679,7 +674,7 @@ const Main = () => {
 
 
       <li className="relative transition">
-        <div className="relative m-2 flex cursor-pointer items-center rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
+        <div className="relative m-2 flex cursor-pointer items-center py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
           <span className="mr-5 flex w-5 text-gray-500">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -697,7 +692,7 @@ const Main = () => {
         </div>
       </li>
       <li className="relative transition">
-        <div className="relative m-2 flex cursor-pointer items-center rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
+        <div className="relative m-2 flex cursor-pointer items-center py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
           <span className="mr-5 flex w-5 text-gray-500"
             >
     <svg
@@ -716,7 +711,7 @@ const Main = () => {
         </div>
       </li>
        <li className="relative transition">
-        <div className="relative m-2 flex cursor-pointer items-center rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
+        <div className="relative m-2 flex cursor-pointer items-center py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
           <span className="mr-5 flex w-5 text-gray-500"
             ><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" /></svg
@@ -725,7 +720,7 @@ const Main = () => {
         </div>
       </li>
       <li className="relative transition">
-        <div className="relative m-2 flex cursor-pointer items-center rounded-xl py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
+        <div className="relative m-2 flex cursor-pointer items-center py-3 pl-5 text-sm text-gray-500 hover:bg-gray-50">
           <span className="mr-5 flex w-5 text-gray-500"
             ><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />

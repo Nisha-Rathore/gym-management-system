@@ -1,1 +1,2 @@
-- [x] Edit src/pages/Main.js to add fill, stroke, stroke-width, className, and path to the Dashboard SVG.
+- [ ] Remove the submenu ul from the Dashboard li in Main.js to make Dashboard a single menu item.
+- [ ] Add a new top-level li for Management after the Dashboard li, with its subitems intact.
